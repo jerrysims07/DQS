@@ -1,0 +1,184 @@
+extends ../template/layout
+
+block content
+  #wrap
+    .row
+      .small-12.columns
+        h1 Diet Quality Score
+    .row
+      .small-8.columns
+        #mainDisplay
+          #goodFoods
+            .row
+              .small-4.columns#fruitLabel Fruit
+              .small-8.columns#fruitServings
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 1
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood 0
+            .row
+              .small-4.columns#vegetableLabel Vegetable
+              .small-8.columns#vegetableServings
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 1
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood 0
+            .row
+              .small-4.columns#leanProteinLabel Lean Protein
+              .small-8.columns#leanProteinServings
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 1
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood -1
+            .row
+              .small-4.columns#wholeGrainLabel Whole Grain
+              .small-8.columns#wholeGrainServings
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 1
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood -1
+            .row
+              .small-4.columns#lowfatDairyLabel Lowfat Dairy
+              .small-8.columns#lowfatDairyServings
+                .small-2.columns
+                  .servingButton.goodFood 1
+                .small-2.columns
+                  .servingButton.goodFood 1
+                .small-2.columns
+                  .servingButton.goodFood 1
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood -1
+                .small-2.columns
+                  .servingButton.goodFood -2
+            .row
+              .small-4.columns#essentialFatsLabel Essential Fats
+              .small-8.columns#essentialFatsServings
+                .small-2.columns
+                  .servingButton.goodFood 2
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood 0
+                .small-2.columns
+                  .servingButton.goodFood -1
+                .small-2.columns
+                  .servingButton.goodFood -1
+          #badFoods
+            .row
+              .small-4.columns#refinedGrainsLabel Refined Grains
+              .small-8.columns#refinedGrainsServings
+                .small-2.columns
+                  .servingButton.badFood -1
+                .small-2.columns
+                  .servingButton.badFood -1
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+            .row
+              .small-4.columns#sweetsLabel Sweets
+              .small-8.columns#sweetsServings
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+            .row
+              .small-4.columns#friedFoodLabel Fried Food
+              .small-8.columns#friedFoodServings
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+            .row
+              .small-4.columns.fullFatDairyLabel Full-Fat Dairy
+              .small-8.columns.fullFatDairyServings
+                .small-2.columns
+                  .servingButton.badFood -1
+                .small-2.columns
+                  .servingButton.badFood -1
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+            .row
+              .small-4.columns#fattyProteinLabel Fatty Protein
+              .small-8.columns#fattyProteinServings
+                .small-2.columns
+                  .servingButton.badFood -1
+                .small-2.columns
+                  .servingButton.badFood -1
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+                .small-2.columns
+                  .servingButton.badFood -2
+      .small-4.columns
+        .row
+          #dailyTotal
+            span#dailyTotalText 0
+        .row
+          #foodEntry
+
